@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f7f5">
+  <title>Spot Atlas · UZEX</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="mast"><div class="frame mast-inner">
+    <div class="brand"><svg aria-hidden="true" viewBox="0 0 38 38"><rect width="38" height="38" rx="9" fill="#163e32"/><g fill="#d1f27a"><rect x="8" y="22" width="5" height="8"/><rect x="16" y="15" width="5" height="15"/><rect x="24" y="8" width="5" height="22"/></g></svg><span>Spot Atlas</span></div>
+    <span class="mast-divider" aria-hidden="true"></span><span class="mast-product">UZEX <span> / </span> SPOT</span>
+    <div class="languages" role="group" aria-label="Interface language"><button type="button" data-lang="uz" aria-pressed="true">UZ</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  </div></header>
+  <main class="frame">
+    <div class="heading">
+      <div class="kicker"><span class="line"></span><span data-i="workspace">TAHLIL MAYDONI</span></div>
+      <h1 data-i="title">Birja reyestri yordamchisi</h1>
+      <p data-i="intro">Birja bitimlari haqida rus yoki o‘zbek tilida so‘rang. Har bir javobning hisoblash usuli va manbasini ko‘ring.</p>
+    </div>
+    <div class="workspace">
+      <div class="work-column">
+        <section class="card enquiry" aria-labelledby="q-title">
+          <div class="panel-tag"><span>01</span><b data-i="queryTag">SO‘ROV</b></div>
+          <h2 id="q-title" data-i="askTitle">Savolingiz</h2>
+          <form id="ask-form">
+            <label for="question" class="sr-only" data-i="askTitle">Savolingiz</label>
+            <textarea id="question" dir="auto" rows="3" placeholder="Masalan, 2024-yilda nechta bitim tuzilgan?" required></textarea>
+            <div class="actions"><span class="keyhint"><kbd>Ctrl</kbd> <span>+</span> <kbd>Enter</kbd></span><button class="submit" id="send" type="submit" disabled><span data-i="submit">Javob olish</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button></div>
+          </form>
+          <div class="examples"><h3 data-i="examples">Sinab ko‘ring</h3><div id="examples"></div></div>
+        </section>
+        <section class="card result" aria-labelledby="a-title" id="result-panel" aria-busy="false">
+          <div class="panel-tag"><span>02</span><b data-i="answerTag">NATIJA</b></div>
+          <div class="result-title"><h2 id="a-title" data-i="answerTitle">Javob va dalillar</h2><span id="status-pill" hidden></span></div>
+          <div id="result-content"><p class="standby" data-i="standby">Savol yuboring. Bu yerda javob, hisoblash usuli va manbalar ko‘rinadi.</p></div>
+        </section>
+        <div id="live" role="status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+      </div>
+      <aside class="card registry" aria-labelledby="r-title">
+        <div class="registry-head"><div class="panel-tag inverse"><span>DB</span><b data-i="dataTag">MA’LUMOTLAR</b></div><h2 id="r-title" data-i="registryTitle">Reyestr qamrovi</h2><div class="total">500 000</div><span class="total-label" data-i="registered">qayd etilgan bitim</span></div>
+        <div class="registry-body">
+          <h3 class="small-label" data-i="perYear">YILLAR KESIMIDA</h3>
+          <div class="chart" id="chart" role="list"></div>
+          <p class="cutoff" data-i="cutoff">* 2026-yil ma’lumotlari 30-oktabrgacha.</p>
+          <div class="catalog"><h3 class="small-label" data-i="related">MA’LUMOTNOMALAR</h3>
+            <div><span data-i="contracts">Shartnomalar</span><b>6 616</b></div>
+            <div><span data-i="members">Ishtirokchilar</span><b>14 392</b></div>
+            <div><span data-i="brokers">Brokerlar</span><b>120</b></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer><span class="footer-brand">SPOT ATLAS</span><span data-i="footer">UZEX AI Hackathon · Sun’iy test ma’lumotlari</span></footer>
+  </main>
+  <p id="startup" role="status">Yuklanmoqda… / Загрузка…</p>
+  <noscript>JavaScript’ni yoqing. / Включите JavaScript.</noscript>
+  <script src="./start.js"></script>
+</body>
+</html>

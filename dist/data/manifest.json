@@ -1,0 +1,469 @@
+{
+  "version": 1,
+  "tables": {
+    "participants": {
+      "fields": [
+        "id",
+        "name",
+        "region",
+        "type",
+        "role",
+        "vat"
+      ],
+      "headers": [
+        "ИНН",
+        "Наименование",
+        "Регион",
+        "Вид деятельности",
+        "Роль",
+        "Плательщик НДС"
+      ],
+      "count": 14392,
+      "parts": [
+        {
+          "asset": "participants-2-fcf5e8312ec2.bin",
+          "file": "participants.csv",
+          "line": 2,
+          "count": 14392,
+          "bytes": 187800,
+          "sha256": "fcf5e8312ec2b4a71fc9eba93668890c326bcc8f74b7f0ad9370eb9dc187bea7"
+        }
+      ]
+    },
+    "brokers": {
+      "fields": [
+        "id",
+        "name",
+        "tin",
+        "region"
+      ],
+      "headers": [
+        "Код брокера",
+        "Наименование",
+        "ИНН",
+        "Регион"
+      ],
+      "count": 120,
+      "parts": [
+        {
+          "asset": "brokers-2-8e353aea44b8.bin",
+          "file": "brokers.csv",
+          "line": 2,
+          "count": 120,
+          "bytes": 2335,
+          "sha256": "8e353aea44b8ef266ba4f5d90ea590e4fc67332eeb091b45d2464ba289b4ccde"
+        }
+      ]
+    },
+    "rates": {
+      "fields": [
+        "date",
+        "rate"
+      ],
+      "headers": [
+        "Дата",
+        "Курс"
+      ],
+      "count": 1765,
+      "parts": [
+        {
+          "asset": "usd_rates-2-446cb4e07d20.bin",
+          "file": "usd_rates.csv",
+          "line": 2,
+          "count": 1765,
+          "bytes": 10497,
+          "sha256": "446cb4e07d20342abfa4146d9ba87d3bc4ec9da1daef7a8a598df65fb2ca39e3"
+        }
+      ]
+    },
+    "contracts": {
+      "fields": [
+        "id",
+        "name",
+        "brand",
+        "size",
+        "grade",
+        "kind",
+        "class",
+        "hsCode",
+        "group",
+        "category",
+        "industry",
+        "unit",
+        "lot",
+        "currency",
+        "basePrice",
+        "deposit",
+        "basis",
+        "region",
+        "warehouse",
+        "type",
+        "contractType",
+        "tradeForm",
+        "paymentTerm",
+        "deliveryTerm",
+        "package",
+        "seller",
+        "registered",
+        "validTo"
+      ],
+      "headers": [
+        "Номер контракта",
+        "Наименование продукта",
+        "Марка товара",
+        "Размер товара",
+        "Сорт товара",
+        "Тип товара",
+        "Класс товара",
+        "Код ТН ВЭД",
+        "Группа товара",
+        "Категория товара",
+        "Отрасль промышленности",
+        "Единица измерения",
+        "Лот",
+        "Валюта",
+        "Базисная цена",
+        "Сумма залога",
+        "Базис поставки",
+        "Регион",
+        "Адрес склада",
+        "Тип торгов",
+        "Тип контракта",
+        "Форма контракта",
+        "Срок оплаты",
+        "Срок поставки",
+        "Упаковка",
+        "ИНН продавца",
+        "Дата регистрации",
+        "Действует до"
+      ],
+      "count": 6616,
+      "parts": [
+        {
+          "asset": "contracts-2-c4097efae9b4.bin",
+          "file": "contracts.csv",
+          "line": 2,
+          "count": 6616,
+          "bytes": 236473,
+          "sha256": "c4097efae9b4b96180302f628c9745294b02353a8b2ca86cab8f155fbf4d96df"
+        }
+      ]
+    },
+    "deals": {
+      "fields": [
+        "id",
+        "date",
+        "time",
+        "type",
+        "quantity",
+        "amount",
+        "startPrice",
+        "contract",
+        "product",
+        "lot",
+        "unit",
+        "region",
+        "contractType",
+        "tradeForm",
+        "status",
+        "seller",
+        "buyer",
+        "sellerBroker",
+        "buyerBroker",
+        "paymentDate",
+        "deliveryDate",
+        "delivered"
+      ],
+      "headers": [
+        "Номер сделки",
+        "Дата сделки",
+        "Время сделки",
+        "Тип торгов",
+        "Количество",
+        "Сумма сделки",
+        "Стартовая цена",
+        "Номер контракта",
+        "Наименование товара",
+        "Лот",
+        "Единица измерения",
+        "Регион",
+        "Тип контракта",
+        "Форма контракта",
+        "Состояние сделки",
+        "ИНН продавца",
+        "ИНН покупателя",
+        "Брокер продавца",
+        "Брокер покупателя",
+        "Дата оплаты",
+        "Дата поставки",
+        "Поставлено"
+      ],
+      "count": 500000,
+      "parts": [
+        {
+          "asset": "deals_2022-2-2e82f1759d48.bin",
+          "file": "deals_2022.csv",
+          "line": 2,
+          "count": 20000,
+          "bytes": 633814,
+          "sha256": "2e82f1759d48df2faee251ecb046a22f563b5c349edfc98aeb22e2b25fe39360"
+        },
+        {
+          "asset": "deals_2022-20002-e1c49cd1bb10.bin",
+          "file": "deals_2022.csv",
+          "line": 20002,
+          "count": 20000,
+          "bytes": 644725,
+          "sha256": "e1c49cd1bb10d36ef3da9a61417c0024ae0fbf9db0fc3f7fb6b0b6bac2421980"
+        },
+        {
+          "asset": "deals_2022-40002-ecd5be1b83a5.bin",
+          "file": "deals_2022.csv",
+          "line": 40002,
+          "count": 20000,
+          "bytes": 706244,
+          "sha256": "ecd5be1b83a57e34a85077a28e6e996059ae4d1c5a12667753230b9d5109b3d5"
+        },
+        {
+          "asset": "deals_2022-60002-832c20ac919f.bin",
+          "file": "deals_2022.csv",
+          "line": 60002,
+          "count": 20000,
+          "bytes": 717630,
+          "sha256": "832c20ac919f778285bf3821091d10198431ffcbd631fafc63bf082de4dfb36a"
+        },
+        {
+          "asset": "deals_2022-80002-1339e8a656c6.bin",
+          "file": "deals_2022.csv",
+          "line": 80002,
+          "count": 4299,
+          "bytes": 167964,
+          "sha256": "1339e8a656c64252e2c2e39fc033a7e220fc49a61464b9a46cf56b7698f88611"
+        },
+        {
+          "asset": "deals_2023-2-1b5a08daea85.bin",
+          "file": "deals_2023.csv",
+          "line": 2,
+          "count": 20000,
+          "bytes": 653210,
+          "sha256": "1b5a08daea8514db5518b54dd49924259c0ce15cd2785d6d1793817f24f89e5b"
+        },
+        {
+          "asset": "deals_2023-20002-e5f39be8c58f.bin",
+          "file": "deals_2023.csv",
+          "line": 20002,
+          "count": 20000,
+          "bytes": 649300,
+          "sha256": "e5f39be8c58fc52acf2bf9825866242b2b7c22227f3d13e37c1b3b9ed1508f05"
+        },
+        {
+          "asset": "deals_2023-40002-f079ae640ca6.bin",
+          "file": "deals_2023.csv",
+          "line": 40002,
+          "count": 20000,
+          "bytes": 705338,
+          "sha256": "f079ae640ca64622d5fc84693baedcbc652e19b84a6156fb64899ab6a21b2194"
+        },
+        {
+          "asset": "deals_2023-60002-5a400e3bffa5.bin",
+          "file": "deals_2023.csv",
+          "line": 60002,
+          "count": 20000,
+          "bytes": 731320,
+          "sha256": "5a400e3bffa52fa4ca4ac2280bc5c847a0678e0e8c1d5239a0851ea5a7a654ad"
+        },
+        {
+          "asset": "deals_2023-80002-08d9639a835c.bin",
+          "file": "deals_2023.csv",
+          "line": 80002,
+          "count": 13985,
+          "bytes": 514865,
+          "sha256": "08d9639a835c6be26499bc2239fc5320bb87861e983564ecfe790320f7878229"
+        },
+        {
+          "asset": "deals_2024-2-f2ce89500431.bin",
+          "file": "deals_2024.csv",
+          "line": 2,
+          "count": 20000,
+          "bytes": 661777,
+          "sha256": "f2ce8950043187054486b9562920ead73884cd1e0a2bcbbf043466e2f97205f1"
+        },
+        {
+          "asset": "deals_2024-20002-ee9d26e4f02d.bin",
+          "file": "deals_2024.csv",
+          "line": 20002,
+          "count": 20000,
+          "bytes": 648335,
+          "sha256": "ee9d26e4f02dc885c520317e130d8708d230dd9776369d758c4181da369b8a44"
+        },
+        {
+          "asset": "deals_2024-40002-27b23af94ac1.bin",
+          "file": "deals_2024.csv",
+          "line": 40002,
+          "count": 20000,
+          "bytes": 682648,
+          "sha256": "27b23af94ac1875f7009626a771c74d2cc5da135a6c30fd5ff827b765dd63ebf"
+        },
+        {
+          "asset": "deals_2024-60002-75fdc6cda5f2.bin",
+          "file": "deals_2024.csv",
+          "line": 60002,
+          "count": 20000,
+          "bytes": 727161,
+          "sha256": "75fdc6cda5f22f6556f408f468fdde8ce561ad6ce8dfbb93ef528d2a4bfe8df5"
+        },
+        {
+          "asset": "deals_2024-80002-3fbcfcd40757.bin",
+          "file": "deals_2024.csv",
+          "line": 80002,
+          "count": 20000,
+          "bytes": 730445,
+          "sha256": "3fbcfcd40757e15a9f4e6133b6d159a9b16f6392e64becccf958180078cb0e36"
+        },
+        {
+          "asset": "deals_2024-100002-c736bc675846.bin",
+          "file": "deals_2024.csv",
+          "line": 100002,
+          "count": 6647,
+          "bytes": 256057,
+          "sha256": "c736bc675846521175241dbfd2a731dd1cd2bca0fa722e537f758b15d9df63b0"
+        },
+        {
+          "asset": "deals_2025-2-231ea8c2a4f1.bin",
+          "file": "deals_2025.csv",
+          "line": 2,
+          "count": 20000,
+          "bytes": 662310,
+          "sha256": "231ea8c2a4f1145b3925bbf858f83323d4c60ffb471d485c0adf2e98235b0f47"
+        },
+        {
+          "asset": "deals_2025-20002-b5cbbb4a7785.bin",
+          "file": "deals_2025.csv",
+          "line": 20002,
+          "count": 20000,
+          "bytes": 651602,
+          "sha256": "b5cbbb4a77858d3ff2666d6a4f1d01e1100b4ae075fac3b4e0b91e0fadf351c1"
+        },
+        {
+          "asset": "deals_2025-40002-79eb6784b911.bin",
+          "file": "deals_2025.csv",
+          "line": 40002,
+          "count": 20000,
+          "bytes": 676657,
+          "sha256": "79eb6784b91118246e144736cc01c468b728ebd8021cd3dfbddc070f427624f3"
+        },
+        {
+          "asset": "deals_2025-60002-e149ffccd61b.bin",
+          "file": "deals_2025.csv",
+          "line": 60002,
+          "count": 20000,
+          "bytes": 730618,
+          "sha256": "e149ffccd61b10fc0df8414d3e045ed317a5309260c4ff1a7bc2f69cbcad5f1b"
+        },
+        {
+          "asset": "deals_2025-80002-c9dae9377647.bin",
+          "file": "deals_2025.csv",
+          "line": 80002,
+          "count": 20000,
+          "bytes": 736079,
+          "sha256": "c9dae9377647b706204628920449e50b1939e7ec334956c18a211796f5adb2e4"
+        },
+        {
+          "asset": "deals_2025-100002-6788647ff63f.bin",
+          "file": "deals_2025.csv",
+          "line": 100002,
+          "count": 15763,
+          "bytes": 579931,
+          "sha256": "6788647ff63fad45cd7ff2c130b0672eb8254a6a0c08edda8c607627bb3933bd"
+        },
+        {
+          "asset": "deals_2026-2-3eed0ed39e2c.bin",
+          "file": "deals_2026.csv",
+          "line": 2,
+          "count": 20000,
+          "bytes": 666162,
+          "sha256": "3eed0ed39e2c7477b3b5ef5fda28f4fcee6eba32ed0373026a74fa59c427fb55"
+        },
+        {
+          "asset": "deals_2026-20002-179c21a338ef.bin",
+          "file": "deals_2026.csv",
+          "line": 20002,
+          "count": 20000,
+          "bytes": 653190,
+          "sha256": "179c21a338ef2752f1f7ac4ca91be7a79da6e4c6bce32b1904a9fe9ef84b5ecc"
+        },
+        {
+          "asset": "deals_2026-40002-37a5bb0468f5.bin",
+          "file": "deals_2026.csv",
+          "line": 40002,
+          "count": 20000,
+          "bytes": 663982,
+          "sha256": "37a5bb0468f549130db4e4daf5814face918570be62edd19b4115b7121e38290"
+        },
+        {
+          "asset": "deals_2026-60002-f3fcf76c83dc.bin",
+          "file": "deals_2026.csv",
+          "line": 60002,
+          "count": 20000,
+          "bytes": 712584,
+          "sha256": "f3fcf76c83dc9dc7e92a756c32ce2cc3dca9f7a9be90676f0830801ed0f67848"
+        },
+        {
+          "asset": "deals_2026-80002-d9ad4334a0af.bin",
+          "file": "deals_2026.csv",
+          "line": 80002,
+          "count": 19306,
+          "bytes": 669305,
+          "sha256": "d9ad4334a0afee66d39db942da6ba29e4f0678108f86a35a13c7f91f9680b82a"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "file": "participants.csv",
+      "count": 14392,
+      "sha256": "c7f7234b2830c1e1e2d6e7e2f564dee483229dad480d0f5abde60a8d82fa5e97"
+    },
+    {
+      "file": "brokers.csv",
+      "count": 120,
+      "sha256": "eeca01d53319f66376f6f8acee4a5061749276e1833c41f51e01298d7800f7d9"
+    },
+    {
+      "file": "usd_rates.csv",
+      "count": 1765,
+      "sha256": "1517a35854552c17e3bcbdf4eb9c8872463c1228032ec4f7fd4643acb51b4e3c"
+    },
+    {
+      "file": "contracts.csv",
+      "count": 6616,
+      "sha256": "1a194df8bf054116badf952d67c33e011044ce1e9ff754ab2288866251cbba64"
+    },
+    {
+      "file": "deals_2022.csv",
+      "count": 84299,
+      "sha256": "2bbb6653e17ff725960af5c18bd8f7f431faf73d32ae794e0376399f25d895d7"
+    },
+    {
+      "file": "deals_2023.csv",
+      "count": 93985,
+      "sha256": "7b774317431b159f6f30208f878257794f8c8f2a0b58bae5226ba9da68b32b78"
+    },
+    {
+      "file": "deals_2024.csv",
+      "count": 106647,
+      "sha256": "88a8415440eb7b9228824dd5f99028262c2defcbf53f121a870a8bd17d3b28b6"
+    },
+    {
+      "file": "deals_2025.csv",
+      "count": 115763,
+      "sha256": "8dfa30e9c5b5b14ff59a5e4060c98661b18821d334b53b5e6f04b42b7ced5013"
+    },
+    {
+      "file": "deals_2026.csv",
+      "count": 99306,
+      "sha256": "cc983823e1ecf721f79deb30c05fff14283231fe71bccc590cda61cc503520de"
+    }
+  ]
+}

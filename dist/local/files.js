@@ -1,0 +1,1 @@
+window.spotLocalFiles=["./local/worker-0.js", "./local/worker-1.js", "./local/worker-2.js", "./local/worker-3.js", "./local/worker-4.js", "./local/worker-5.js"];
