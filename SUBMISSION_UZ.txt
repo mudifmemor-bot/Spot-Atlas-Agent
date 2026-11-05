@@ -1,0 +1,15 @@
+Spot Atlas — UZEX birja bitimlari reyestri yordamchisi
+
+Google Form uchun yechim tavsifi
+
+Spot Atlas ruscha va o‘zbekcha savoldan bitim raqami, davr, mahsulot, hudud va kerakli ko‘rsatkichni ajratadi. JavaScript Web Worker natijani tashkilotchilar bergan 500 000 ta bitim, shartnoma kartochkalari, ishtirokchilar, brokerlar va dollar kursi jadvallaridan hisoblaydi. Sotuvchi va xaridorlar STIR, brokerlar kod, shartnomalar esa raqam bo‘yicha bog‘lanadi. Jismoniy hajm lotlar soni va lot hajmi ko‘paytmasidir. Eksport summasini so‘mga o‘tkazishda aynan bitim sanasidagi kurs ishlatiladi. Pul hisoblari butun sonli arifmetika bilan bajariladi.
+
+Javobda manba fayli, mavjud bo‘lganda qator raqami va hisoblash usuli ko‘rsatiladi. Yozuv topilmasa yoki savolning barcha shartlarini tekshirib bo‘lmasa, yordamchi buni aytadi yoki aniqlik so‘raydi. Sinovda 34 ta savolning kutilgan javoblari asl CSV fayllaridan mustaqil hisoblandi. Yana 23 ta test boshqa iboralar, har ikki til va noto‘g‘ri javob berish xavfi bo‘lgan holatlarni qamrab oldi. Barcha 57 ta ichki sinovdan o‘tdi.
+
+Forma uchun alohida maydonlar
+
+Prototip havolasi uchun ro‘yxatdan o‘tmasdan ochiladigan jonli HTTPS manzilini kiriting.
+Jamoa a’zolari uchun ro‘yxatdan o‘tgan bir, ikki yoki uch ishtirokchining ism-familiyasini kiriting.
+Jamoa rahbarining ism-familiyasi va aloqa telefonini kiriting.
+
+Muddat — 2026-yil 5-noyabr, Toshkent vaqti bilan soat 18:00. Havolani inkognito oynada ochib, ruscha va o‘zbekcha bittadan savolga javob oling. Soat 18:00 dan keyin prototipni o‘zgartirmang.
